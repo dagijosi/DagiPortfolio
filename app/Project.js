@@ -43,8 +43,8 @@ const Project = () => {
         </Text>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-4">
-        {proj.map((project) => (
-          <div className="flex justify-center ml-4 md:ml-0 mb-4">
+        {proj.map((project,index) => (
+          <div key={index} className="flex justify-center ml-4 md:ml-0 mb-4">
             <Card className="w-fit rounded-2xl">
               <img src={project.Img} alt="Project Image" className="w-80 h-48" />
               <CardContent className="flex flex-col mt-4">
